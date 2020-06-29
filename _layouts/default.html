@@ -1,100 +1,91 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
-  <head>
-<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	  
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="http://www.w3schools.com/w3css/4/w3.css">
-	  
-  <link rel="icon" href="http://adrifelcha.github.io/faviconMouse.png">
-    <meta charset="UTF-8">
+  
+	<head>
+		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	  	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="http://www.w3schools.com/w3css/4/w3.css">
+		 
+  		<link rel="icon" href="http://adrifelcha.github.io/faviconMouse.png">
+    		<meta charset="UTF-8">
 
-{% seo %}
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#157878">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+		{% seo %}
+    			<meta name="viewport" content="width=device-width, initial-scale=1">
+    			<meta name="theme-color" content="#157878">
+    			<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    			<link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
 
-<style>
+		<style>
 
-header {
-    padding: 3em;
-    color: white;
-    background: linear-gradient(to bottom right, #086A87, #000000);
-    clear: left;
-    text-align: center;
-    border: 1px solid gray;
-}
+			header {
+    				padding: 3em;
+    				color: white;
+    				background: linear-gradient(to bottom right, #086A87, #000000);
+    				clear: left;
+    				text-align: center;
+    				border: 1px solid gray;
+			}
 	
-footer {
-    padding: 2em;
-    color: white;
-    background: linear-gradient(to bottom, #086A87, #000000);
-    clear: left;
-    border: 1px solid gray;
-    text-align: center;
-}
+			footer {
+			    padding: 2em;
+			    color: white;
+			    background: linear-gradient(to bottom, #086A87, #000000);
+			    clear: left;
+			    border: 1px solid gray;
+			    text-align: center;
+			}
 
-.column {
-    float: left;
-    width: 50%;
-    padding: 10px;
-    height: 900px;
-}
+			.column {
+			    float: left;
+			    width: 50%;
+			    padding: 10px;
+			    height: 900px;
+			}
 
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
+			.row:after {
+			    content: "";
+			    display: table;
+			    clear: both;
+			}
 		  
-hr {
-	height: 6px;
-	background: url(http://ibrahimjabbari.com/english/images/hr-11.png) repeat-x 0 0;
-    border: 0;
-}
+			hr {
+				height: 6px;
+				background: url(http://ibrahimjabbari.com/english/images/hr-11.png) repeat-x 0 0;
+			    border: 0;
+			}
 
-hr.style2 { 
-  border: 0; 
-  height: 1px; 
-  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-  background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-  background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); 
-}
+			hr.style2 { 
+			  border: 0; 
+			  height: 1px; 
+			  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+			  background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+			  background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+			  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); 
+			}
 
-hr.style3 {
-	height: 6px;
-	background: url(http://ibrahimjabbari.com/english/images/hr-12.png) repeat-x 0 0;
-    border: 0;
-}
+			hr.style3 {
+				height: 6px;
+				background: url(http://ibrahimjabbari.com/english/images/hr-12.png) repeat-x 0 0;
+			    border: 0;
+			}
 
-a.light {
-    color: #FAFAFA;
-    text-decoration: underline;
-}
+			a.light {
+			    color: #FAFAFA;
+			    text-decoration: underline;
+			}
 
-a.dark {
-    color: #2E2E2E;
-    text-decoration: underline;
-}
-	
-  </style>
-	  
-  </head>
-  <body>
-    <header>
-      <h1 class="project-name">{{ site.title | default: site.github.repository_name }}</h1>
-      <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2>
-      {% if site.github.is_project_page %}
-	    <center>
-	<a href="inicioApps.html" class="w3-btn w3-light-blue w3-button w3-xlarge w3-round-large w3-hover-dark-grey"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Apps en línea <i class="fa fa-graduation-cap" aria-hidden="true"></i></a>
-	<br> <br>
-	<a href="http://github.com/BouzasLab25/LabVirtual25/zipball/master" class="w3-btn w3-light-blue w3-button w3-hover-dark-grey w3-xlarge w3-round-large">Códigos (.zip) <i class="fa fa-download" aria-hidden="true"></i></a>	 
-	<br><br>
-        <a href="{{ site.github.repository_url }}" target="_blank" class="w3-btn w3-light-blue w3-button w3-xlarge w3-hover-dark-grey w3-round-large"><i class="fa fa-github"></i> Ver Repositorio <i class="fa fa-github"></i></a>
-	    </center>	
-      {% endif %}
+			a.dark {
+			    color: #2E2E2E;
+			    text-decoration: underline;
+			}
+
+		  </style>
+	  </head>
+  
+<body>
+    	<header>
+      		<h1 class="project-name">Crew-Pass</h1>
+      <h2 class="project-tagline">Descripción del sitio web</h2>
     </header>
 	  <br>
     	  <center>
